@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e4f1cb;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#container {
+    margin-top: 100px;
+    width: 80%;
+    max-width: 400px;
+    margin-inline: auto;
+}
+
+hi {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+input, button {
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+button {
+    border: none;
+    background-color: #fa7f72;
+    color: #e4f1cb;
+    transition: filter .2s;
+}
+
+button:hover {
+    background-color: white;
+    color: #fa7f72;
+}
+
+#tarefas {
+    margin-top: 30px;
+}
+
+#tarefas div {
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 123px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
