@@ -8,22 +8,20 @@ body {
     color: white;
     text-align: center;
     font-family: sans-serif;
+    font-size: 40px;
 }
 
-#container {
+.container {
     margin-top: 100px;
     width: 80%;
     max-width: 400px;
     margin-inline: auto;
 }
 
-hi {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    opacity: 0.9;
-}
 
 input, button {
+    display: block;
+    width: 100%;
     padding: 20px;
     font-size: 20px;
     border-radius: 40px;
@@ -40,46 +38,42 @@ button {
 button:hover {
     background-color: white;
     color: #fa7f72;
-}
-
-#tarefas {
-    margin-top: 30px;
-}
-
-#tarefas div {
-    font-size: 16px;
-    font-weight: normal;
-    opacity: 0.9;
-    margin-bottom: 10px;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-ul li {
     cursor: pointer;
-    position: relative;
-    padding: 12px 8px 123px 40px;
-    list-style-type: none;
-    background: #eee;
-    font-size: 18px;
-    transition: 0.2s;
 }
 
-ul li:hover {
-    background: #ddd;
+.error {
+    border: 2px #f44336 !important;
 }
 
-.close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 12px 16px 12px 16px;
+.error::placeholder {
+    color: #f44336;
 }
 
-.close:hover {
-    background-color: #f44336;
-    color: white;
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    font-size: 30px;
+    background-color: white;
+    color: #fa7f72;
+    text-align: center;
+}
+
+.task-item i {
+    color: #f44336;
+    padding: 12px;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.task-item i:hover {
+    cursor: pointer;
+}
+
+.task-item:hover {
+    cursor: pointer;
 }
